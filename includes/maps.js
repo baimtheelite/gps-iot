@@ -122,18 +122,7 @@ function addInfoBubble(map) {
                 </a>
         </div>`
       );
-      lineString.pushPoint({
-        lat: child.val().latitude,
-        lng: child.val().longitude,
-      });
     });
-    map.addObject(
-      new H.map.Polyline(lineString, {
-        style: {
-          lineWidth: 4,
-        },
-      })
-    );
   });
 }
 
