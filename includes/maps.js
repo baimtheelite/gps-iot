@@ -188,24 +188,24 @@ $("#row-coordinates").on("click", ".jump", function () {
 });
 
 // <!-- Script untuk delete key -->
-removeFirebaseKey = () => {
-  var id = [];
-  $(".data-key:checked").each(function (i) {
-    id[i] = $(this).val();
-  });
+// removeFirebaseKey = () => {
+//   var id = [];
+//   $(".data-key:checked").each(function (i) {
+//     id[i] = $(this).val();
+//   });
 
-  if (id.length === 0) {
-    alert("Pilih setidaknya satu data!");
-  } else {
-    for (var i = 0; i < id.length; i++) {
-      firebase
-        .database()
-        .ref("koordinat/" + id[i])
-        .remove();
-    }
-  }
-};
-// removeFirebaseKey();
-$("#btn-hapus").on("click", function () {
-  removeFirebaseKey();
-});
+//   if (id.length === 0) {
+//     alert("Pilih setidaknya satu data!");
+//   } else {
+//     for (var i = 0; i < id.length; i++) {
+//       firebase
+//         .database()
+//         .ref("koordinat/" + id[i])
+//         .remove();
+//     }
+//   }
+// };
+// // removeFirebaseKey();
+// $("#btn-hapus").on("click", function () {
+//   removeFirebaseKey();
+// });

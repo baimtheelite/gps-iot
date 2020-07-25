@@ -36,11 +36,11 @@
         <div class="row">
             <div class="card-deck">
                 <div class="card">
-                    <div class="card-header"><b>Map</b></div>
+                    <div class="card-header"><b>Maps</b></div>
                     <div style="width: 540px; height: 360px" id="mapContainer"></div>
                 </div>
                 <div class="card" style="max-height: 400px;">
-                    <div class="card-header"><b>Record</b></div>
+                    <div class="card-header"><b>Records</b></div>
                     <div id="card-koordinat" class="card-body" style="overflow-y: scroll;">
                         <div class="table-responsive">
                             <table id="row-coordinates" class="table">
